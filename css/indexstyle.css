@@ -1,0 +1,122 @@
+body{
+    cursor: default;
+    margin:0px;
+    background-color: black;
+    background-image: url("https://www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Cantarell Light";
+}
+#header{
+
+    height: 160px;
+    background-color: darkslategray;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@keyframes a1 {
+    0% {color: white}
+    50% {color: #707070}
+    100% {color: white}
+}
+#menubar{
+    color: white;
+    font-size: 20pt;
+    float: right;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+#banner{
+    height: 160px;
+    font-size: 80pt;
+    animation-name: a1;
+    animation-duration: 5s;
+    color: white;
+    padding-left: 5pt;
+}
+
+.button{
+    cursor: pointer;
+    background-color: gray;
+    padding: 10px;
+    margin: 3pt;
+    border-radius: 7px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#menubar .button:hover{
+    background-color: #909090;
+}
+#content{
+    background-color: black;
+    color: white;
+    /*text-align: -webkit-center;*/
+    width: 60vw;
+    margin: auto;
+    padding: 10vw;
+
+    /*margin-left: 20vw;
+    margin-right: 20vw;*/
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+
+#content table{
+    min-width: 90%;
+    width: auto;
+    border-collapse: collapse;
+}
+#content table.list{
+    border: 2px solid #202020;
+}
+
+#content table.list tr{
+    border: 2px solid #202020;
+
+}
+
+#content table.list tr.selectable:hover{
+    background-color: #404040;
+    cursor:pointer;
+}
+
+#content table.list tr.selected{
+    background-color: #303030;
+}
+#content table.list tr.selected:hover{
+    background-color: #505050;
+    cursor:pointer;
+}
+
+#content table td:not(:first-child){
+    padding-left: 4pt;
+}
+
+#content table.list td{
+    border: 1px dotted #202020;
+}
+#content table.form{
+    min-width: 40%;
+}
+#content table.form td:nth-child(2){
+    text-align: right;
+}
+
+
